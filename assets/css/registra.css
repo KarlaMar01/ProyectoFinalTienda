@@ -1,0 +1,28 @@
+body {
+    background-image: url('../../assets/img/registra5.jpg');
+    background-repeat: no-repeat;
+}
+
+.title {
+    color: white;
+    text-align: right;
+    margin-right: 15rem;
+}
+
+.title2 {
+    font-size: 4rem;
+    margin-left: 4rem;
+    margin-top: -17rem;
+}
+
+.text {
+    font-size: 1.4rem;
+}
+
+.btn-reg {
+    background-color: teal;
+    color: white;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-radius: 0.5rem;
+}
