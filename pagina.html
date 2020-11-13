@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleV.css">
+    <link rel="stylesheet" href="wrstyle.css">
+    <title>Pride</title>
+</head>
+
+<body>
+
+    <div class="media">
+        <!----------------------------------------SCRIPT DE FACEBOOK----------------------------------------------------->
+        <script>
+            function statusChangeCallback(response) { // Called with the results from FB.getLoginStatus().
+                console.log('statusChangeCallback');
+                console.log(response); // The current login status of the person.
+                if (response.status === 'connected') { // Logged into your webpage and Facebook.
+                    testAPI();
+                } else { // Not logged into your webpage or we are unable to tell.
+                    document.getElementById('status').innerHTML = 'Inicie Sesion ' +
+                        'en la siguiente pagina';
+                    window.location.href = "index.html";
+                }
+            }
+
+
+            function checkLoginState() { // Called when a person is finished with the Login Button.
+                FB.getLoginStatus(function(response) { // See the onlogin handler
+                    statusChangeCallback(response);
+                });
+            }
+
+
+            window.fbAsyncInit = function() {
+                FB.init({
+                    appId: '633979373867136',
+                    cookie: true, // Enable cookies to allow the server to access the session.
+                    xfbml: true, // Parse social plugins on this webpage.
+                    version: 'v8.0' // Use this Graph API version for this call.
+                });
+
+
+                FB.getLoginStatus(function(response) { // Called after the JS SDK has been initialized.
+                    statusChangeCallback(response); // Returns the login status.
+                });
+            };
+
+            function testAPI() { // Testing Graph API after login.  See statusChangeCallback() for when this call is made.
+                console.log('Bienvenido!  Recuperando su informaión.... ');
+                FB.api('/me', {
+                    fields: 'name,email,picture.type(large)'
+                }, function(response) {
+                    console.log('Inicio exitoso para: ' + response.name);
+                    document.getElementById('status').innerHTML =
+                        '  <img src = "' + response.picture.data.url + '" width="60"> ' + response.name;
+                });
+            }
+        </script>
+        <!----------------------------------------IMAGEN DE FACEBOOK----------------------------------------------------->
+        <d iv style="text-align: right; margin-right: 1rem;">
+            <header id="header">
+
+
+                <div id="status">
+
+
+            </header>
+            </div>
+            <!--------------------------------------------------------------------------------------------------->
+            <header class="prin">
+                <div class=" contenidoh contenido-header ">
+                    <div class="titulo ">
+                        <a href="index.html">
+                            <!--Logo-->
+                            <img src="img/logo.png " alt="Pride" class="logo ">
+                        </a>
+                        <div class="logot ">𝓟𝓻𝓲𝓭𝓮</div>
+                        <nav class="links ">
+                            <a href="productos.html">Papelería</a>
+                            <a href="Regalos.html">Regalos</a>
+                            <a href="contacto.html">Contáctanos</a>
+                            <a href="nosotros.html">Nosotros</a>
+                            <a href="registro-ingreso.php">Registro</a>
+                            <a href="administra.php">Admin</a>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+
+            <div>
+                <h1 class="cate ">Categorías</h1>
+                <center>
+                    <a href="Regalos.html">
+                        <img src="img/icono.png " alt="logo papeleria " class="icono1 " text="Hola ">
+                        <a href="productos.html"><img src="img/pape.png " alt="Logo Regalos " class="icono2 "></a>
+                </center>
+
+
+                <h2 class="pap ">Regalos</a>
+
+                    <div class="reg ">Papelería</div>
+                </h2>
+
+            </div>
+
+            <div class="contenedor-exp ">
+                <center><img src="img/regalo.jpg " alt=" " class="img4 "><img src="img/regalo1.jpg " alt=" " class="img4 ">
+                    <img src="img/regalo3.jpg " alt=" " class="img4 "><img src="img/regalo4.jpg " alt=" " class="img4 "></center>
+
+            </div>
+
+            <footer>
+                <section class="finalpagina ">
+                    <nav class="links info2 ">
+                        <div class="contenedor-nosotros ">
+                            <div class="contenido-nosotros info1 ">
+                                <a href="contactanos.html ">
+                                    <h3 class="links-f ">Contáctanos</h3>
+                                </a>
+                                <p class="ubi info "><strong>Ubicación: </strong>Av. El Sol, Col. San Miguel , SJR, Qro CP. 76890</p>
+                                <p><strong>Correo: </strong> clientes.pr@outlook.com.mx</p>
+                                <p>Folleto del mes</p>
+                                <p>Ofertas</p>
+                                <p>Facturación</p>
+                            </div>
+                            <div class="contenido-nosotros info1 ">
+                                <a href="nosotros.html ">
+                                    <h3 class="links-f ">Información del Sitio</h3>
+                                </a>
+                                <p class="info ">Convenio de Usuario</p>
+                                <p>Aviso de privacidad</p>
+                                <p>Devoluciones</p>
+                                <p>Términos y Condiciones</p>
+                            </div>
+                            <div class="contenido-nosotros info1 ">
+                                <a href="contactanos.html " class="info ">
+                                    <h3 class="links-f ">Atención al Cliente</h3>
+                                </a>
+                                <p class="info ">Proveedores</p>
+                                <p>Información de Entrega</p>
+                            </div>
+                        </div>
+                    </nav>
+                    <hr>
+                    <div>
+                        <img src="img/redes.png " alt=" " class="redes ">
+                    </div>
+                </section>
+            </footer>
+
+    </div>
+</body>
+
+</html>

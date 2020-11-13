@@ -1,0 +1,39 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    
+    
+}
+
+
+#map{
+    width: 1280px;
+    height: 400px;  
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    background-color: #ffffff;
+    padding: 0px;
+    border: 4px solid #49addf;
+    
+     
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.seccionuno {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.tamanoFuente {
+    font-weight: 500;
+    font-family: 'Anton', sans-serif;
+}
+

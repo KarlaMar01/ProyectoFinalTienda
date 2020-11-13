@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/estilosMapa.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros</title>
+</head>
+
+<body>
+    <div class="mediaInfo">
+    <header class="">
+        <div class="contenido contenido-header">
+            <div class="titulo">
+
+                <a href="index.html">
+                    <!--Logo-->
+                    <img src="img/logo.png" alt="Logotipo de Bienes Raíces" class="logo">
+                </a>
+                <div class="logott">𝓟𝓻𝓲𝓭𝓮</div>
+                <nav class="links">
+                    <a href="Regalos.html">Regalos</a>
+                    <a href="contacto.html">Contáctanos</a>
+                    <a href="registro-ingreso.php">Registro</a>
+                    <a href="administra.php">Admin</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class=" banner inicio">
+        <div class="banner-contenidoi">
+            <div class="uno">
+                <h1>Papeleria "𝓟𝓻𝓲𝓭𝓮"</h1>
+                <p>Ofrecemos articulos de papeleria a un bajo costo, tenemos desde gomas, lapices, hasta articulos más grandes para oficinas a un bajo costo, por mayoreo o menudeo. Nos interesa dar un producto o servicio a la brevedad posible, ya que reconocemos
+                    la prisa que pueden tener tanto padres, alumnos y profesores antes de la entrada a clases, somos conscientes de la escasez de tiempo con la que cuentan nuestros clientes, por ello procuramos que, en cuestión de servicios, estos se
+                    apliquen con la mayor calidad y en el menor tiempo posible.
+                </p>
+
+            </div>
+
+            <section class="contenedor seccionuno">
+                <h1 class="tamanoFuente centrar-texto ">Nuestra Ubicación</h1>
+                
+                <div id="map"></div>
+                </section>
+                <script>
+                    var map;
+
+function initMap() {
+
+    var utsjr = {
+
+        lat: 20.367393,
+        lng: -100.010187
+
+    }
+    map = new google.maps.Map(document.getElementById("map"), {
+        center: utsjr,
+        zoom: 18
+    });
+
+    var marker = new google.maps.Marker({
+        position: utsjr,
+        map: map,
+        title: 'Universidad Tenológica SJR',
+        icon: './assets/img/iconoRojo.png'
+    });
+
+    infoWindow = new google.maps.InfoWindow({
+        content: `'<h1>Universidad</h1>
+                   <p>Direccion: Av. La palma #125, Vistahermosa</p>
+                   <img src="./assets/img/utsjr.png" alt="" width="250rem" height="100rem">
+                   <p><a href="https://www.utsjr.edu.mx/">Página Web</p>'`
+    });
+
+    /**
+     * Eventos
+     *  "click"
+     *  "dbclick"
+     *  "mouseup"
+     *  "mousedown"
+     *  "mouseover"
+     *  "mouseout"
+     */
+//en donde dice click se le cambia el nombre del evento
+    google.maps.event.addListener(marker, 'click', function() {
+        infoWindow.open(map, marker)
+    })
+}
+                </script>
+            <div class="noticia">
+                <img class="izquierda" src="img/mision.png">
+                <aside>
+                    <h2>Misión: </h2>
+                    <p>Comercializar productos escolares, de oficina y tecnología de calidad, a través de un excelente servicio y precios competitivos
+                    </p>
+                </aside>
+                <div class="final"></div>
+            </div>
+            <div class="noticia1">
+                <img class="derecha" src="img/vision.png" height="9rem">
+                <aside>
+                    <h2>Visión: </h2>
+                    <p>Ser la mejor opción para la adquisición de productos escolares, de oficina y tecnología.</p>
+                </aside>
+                <div class="final"></div>
+            </div>
+            <div class="noticia">
+                <img class="izquierda" src="img/valores.jpg">
+                <aside>
+                    <h2>Valores:</h2>
+                    <ul>
+                        <li>Servicio al cliente</li>
+                        <li>Trabajo en equipo</li>
+                        <li>Profesionalismo</li>
+                        <li>Honestidad</li>
+                        <li> Respeto </li>
+                    </ul>
+                </aside>
+                <div class="final"></div>
+            </div>
+
+
+            <h2>Productos</h2>
+
+            <ul>Lápices (en diferentes números)</ul>
+            <ul>Borradores (para grafito y pizarrones)</ul>
+            <ul>Plumones (diversos colores)</ul>
+            <ul>Plumas (diversos colores)</ul>
+            <ul>Juego geométrico (por pieza o en conjunto)</ul>
+            <ul>Libretas</li>
+                <ul>Paquete de útiles escolares para el regreso a clases</ul>
+
+
+
+        </div>
+    </div>
+    <footer>
+        <section class="finalpagina">
+            <nav class="links info2">
+                <div class="contenedor-nosotros">
+                    <div class="contenido-nosotros info1">
+                        <a href="contactanos.html">
+                            <h3 class="links-f">Contáctanos</h3>
+                        </a>
+                        <p class="ubi info"><strong>Ubicación: </strong>Av. El Sol, Col. San Miguel , SJR, Qro CP. 76890</p>
+                        <p><strong>Correo: </strong> clientes.pr@outlook.com.mx</p>
+                        <p>Folleto del mes</p>
+                        <p>Ofertas</p>
+                        <p>Facturación</p>
+                    </div>
+                    <div class="contenido-nosotros info1">
+                        <a href="nosotros.html">
+                            <h3 class="links-f">Información del Sitio</h3>
+                        </a>
+                        <p class="info">Convenio de Usuario</p>
+                        <p>Aviso de privacidad</p>
+                        <p>Devoluciones</p>
+                        <p>Términos y Condiciones</p>
+                    </div>
+                    <div class="contenido-nosotros info1">
+                        <a href="contactanos.html" class="info">
+                            <h3 class="links-f">Atención al Cliente</h3>
+                        </a>
+                        <p class="info">Proveedores</p>
+                        <p>Información de Entrega</p>
+                    </div>
+                </div>
+            </nav>
+            <hr>
+            <div>
+                <img src="img/redes.png" alt="" class="redes">
+            </div>
+        </section>
+    </footer>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpZOqXBl188so5Zib5IgYmb-MtrNVquEk&callback=initMap&libraries=&v=weekly" defer></script>
+    </div>
+</body>
+
+</html>
