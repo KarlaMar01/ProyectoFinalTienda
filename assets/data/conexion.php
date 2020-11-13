@@ -39,7 +39,7 @@ class Conexion{
         function insertarUsuario($usuario,$pass,$names,$correo){
             $con = $this->conectar();
         
-            $stmt = $con->prepare('INSERT INTO usuario(id,usuario,contrasena,nombre,correo_e) VALUES (NULL,:usuario, :pass, :names, :correo)');
+            $stmt = $con->prepare('INSERT INTO usuario(usuario,contrasena,nombre,correo_e) VALUES (:usuario, :pass, :names, :correo)');
             $rows = $stmt->execute(array(':usuario'=>$usuario,
                                           ':pass'=>$pass,
                                           ':names'=>$names,

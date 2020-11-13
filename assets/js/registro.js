@@ -23,17 +23,16 @@ $(document).ready(function() {
         })
 
         .then(response => response.json())
-        .then(response => {
-            //console.log(response.data);
-            if(response.dato=='ok'){
-                location.href="index.html"
-            }
-            else{
-                alert("Datos Incorrectos")
-            }
+            .then(response => {
+                // console.log(response);
+                if (response.dato == 'ok') {
+                    location.href = "index.html"
+                } else {
+                    alert("Datos Incorrectos")
+                }
             })
-        .catch(err => {
-            console.log(err);
-        });
+            .catch(err => {
+                console.log(err);
+            });
     }
 });
