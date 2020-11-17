@@ -1,18 +1,19 @@
 body {
-    background-image: url('../../assets/img/registra5.jpg');
+    background-image: url("../img/registra5.jpeg");
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .title {
     color: white;
     text-align: right;
-    margin-right: 15rem;
+    margin-right: 10rem;
 }
 
 .title2 {
     font-size: 4rem;
     margin-left: 4rem;
-    margin-top: -17rem;
+    margin-top: -13rem;
 }
 
 .text {
@@ -25,4 +26,8 @@ body {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     border-radius: 0.5rem;
+}
+
+.formularior {
+    margin-right: 3rem;
 }

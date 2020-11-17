@@ -76,5 +76,33 @@ class Conexion{
              return $registros;
 
         }
+
+        function agregarProducto($id_p, $nombre_p, $descripcion_p, $precio_v, $precio_c, $stock, $url_i){
+            $con = $this->conectar();
+        
+            $stmt= $con->prepare('INSERT INTO producto(id_prod,
+                                                        nombre_producto,
+                                                        descripcion_producto, 
+                                                        precio_venta,
+                                                        precio_compra,
+                                                        stock, 
+                                                        url_img)
+                                                VALUES(:id_p,
+                                                       :nombre_p, 
+                                                       :descripcion_p, 
+                                                       :precio_v, 
+                                                       :precio_c, 
+                                                       :stock, 
+                                                       :url_i)');
+            $rows = $stmt->execute(array(':id_p'=>$id_p,
+                                        ':nombre_p'=>$nombre_p,
+                                         ':descripcion_p'=>$descripcion_p,
+                                         ':precio_v'=>$precio_v,
+                                         ':precio_c'=>$precio_c,
+                                         ':stock'=>$stock,
+                                         ':url_i'=>$url_i));
+        
+            return $rows;
+        }
 } 
 ?>

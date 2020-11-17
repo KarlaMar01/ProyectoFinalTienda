@@ -1,0 +1,315 @@
+/*nosotros*/
+
+.iniciot img {
+    width: 100%;
+}
+
+.uno {
+    background-image: url(img/p.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner {
+    width: 100%;
+    display: grid;
+    padding-bottom: 4rem;
+    text-align: center;
+}
+
+.inicio {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.inicio p {
+    margin: 10px;
+    padding: 25px;
+}
+
+.banner-contenidoi {
+    font-weight: 300;
+    position: relative;
+    font-size: 1.5rem;
+    font-family: Segoe UI, Frutiger Linotype, Dejavu Sans, Helvetica, Neue, Arial, sans-serif;
+    line-height: 1.8;
+}
+
+div.noticia {
+    width: 100%;
+    margin: 20px auto;
+    background-color: #17202A;
+    color: #fff;
+    
+    
+}
+.noticia img{
+    height: 17rem;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+div.noticia1 {
+    width: 100%;
+    margin: 20px auto;
+    background-color: #FDFEFE;
+    color: #17202A;
+    
+}
+
+div.noticia1 img.izquierda {
+    float: left;
+    margin-right: 15px;
+    clear: both;
+}
+
+div.noticia1 img.derecha {
+    float: right;
+    margin-left: 15px;
+    clear: both;
+}
+
+div.noticia img.izquierda {
+    float: left;
+    margin-right: 15px;
+    clear: both;
+}
+
+div.noticia img.derecha {
+    float: right;
+    margin-left: 15px;
+    clear: both;
+}
+
+div.final {
+    clear: both;
+}
+
+.izquierda {
+    width: 33%;
+    height: 20%;
+}
+
+.derecha {
+    width: 33%;
+    height: 20rem;
+}
+
+.contenido {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.contenido-header {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+/*header-footer*/
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.d-block {
+    display: block!important;
+}
+
+.icono1 {
+    height: 30rem;
+    width: 30rem;
+    margin-right: 3.5rem;
+}
+
+.icono2 {
+    height: 20rem;
+    width: 35rem;
+    margin-bottom: 3rem;
+}
+
+img {
+    max-width: 100%;
+    /*para que las imagenes no se vean encimadas*/
+}
+
+.contenido {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.contenido-header {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.titulo {
+    background-color: #17202A;
+    opacity: .9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.contenido-nosotros info1,
+h3 {
+    color: white;
+}
+
+.cate {
+    font-size: 2.7rem;
+    color: rgb(33, 74, 134);
+    text-align: center;
+    margin-top: 4rem
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.45rem;
+    margin-right: 4rem;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: bold;
+}
+
+.links a:hover {
+    color: rgba(177, 18, 111, 0.959);
+}
+
+.pap {
+    text-align: left;
+    text-indent: 17rem;
+    display: inline-block;
+}
+
+.reg {
+    float: right;
+    text-indent: 32rem;
+}
+
+.finalpagina {
+    background-color: rgb(51, 51, 51);
+    width: 100%;
+    height: 29rem;
+    display: inline-block;
+}
+
+.contenedor {
+    max-width: 120rem;
+    /* igual  a 1200 px*/
+    margin: 0 auto;
+}
+
+.barra {
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+    text-indent: 5rem;
+}
+
+.fin {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin-right: 2rem;
+    /*separacion entre elementos*/
+    font-family: 'Lato', sans-serif;
+    display: inline-block;
+    text-indent: 18rem;
+    margin-bottom: -1rem;
+    padding-top: -2.7rem;
+}
+
+.fi {
+    text-indent: 4rem;
+}
+
+.contenido-icono {
+    margin-bottom: 5rem;
+}
+
+.contenedor-exp {
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+
+.contenido-nosotros {
+    flex-basis: calc(50% - 1rem);
+    padding: 0.8rem;
+    margin-left: 7rem;
+    margin-right: 0.5rem;
+    line-height: 1.9rem;
+    font-display: 8rem;
+}
+
+.ubi {
+    line-height: 1.4rem;
+}
+
+.contenedor-nosotros {
+    display: flex;
+    color: white;
+}
+
+.links-f {
+    line-height: 1.9rem;
+    font-size: 1.2rem;
+}
+
+.info {
+    margin-top: -1.5rem;
+}
+
+.info1 {
+    margin-top: 1.5rem;
+}
+
+.info2 {
+    margin-bottom: -1.5rem;
+}
+
+.logo {
+    width: 7rem;
+    height: 6.53rem;
+    margin-left: 7rem;
+    margin-bottom: 0.4rem;
+}
+
+.logot {
+    font-size: 3rem;
+    margin-left: -9rem;
+    margin-top: -0.2rem;
+}
+
+.redes {
+    width: 11rem;
+    height: 3rem;
+    float: right;
+    margin-right: 8rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+.logott {
+    font-size: 2rem;
+    float: center;
+    color: white;
+}
+
+.mediaInfo{
+    width: 1325px;
+    margin: 0 auto;
+}

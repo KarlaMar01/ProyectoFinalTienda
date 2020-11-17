@@ -18,32 +18,40 @@
     <div class="title">
         <h1 class="title2"> Registro de productos </h1>
     </div>
+    <div class="formularior">
+        <form id="registro_pro" method="POST" class="registra">
+            <div class="form-group ">
+                <input type="text" class="form-control text" id="id_p" name="id_p" placeholder="Id producto">
+            </div>
+            <div class="form-group ">
+                <input type="text" class="form-control text" id="nombre" name="nombre" placeholder="Nombre producto">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control text" id="descripcion" name="descripcion" placeholder="Descripción">
+            </div>
+            <div class="form-group">
+                <input type="number" class="form-control text " id="preciov" name="preciov" placeholder="Precio de venta">
+            </div>
+            <div class="form-group">
+                <input type="number" class="form-control text" id="precioc" name="precioc" placeholder="Precio de compra">
+            </div>
+            <div class="form-group">
+                <input type="number" class="form-control text " id="stock" name="stock" placeholder="Cantidad en stock">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control text" id="url_i" name="url_i" placeholder="URL de la imagen">
+            </div>
 
-    <form id="formulario3" method="POST" class="registra">
+            <center><button id="btnRegistrar" class="btn-reg text ">Registrar</button></center>
 
-        <div class="form-group ">
-            <input type="text" class="form-control text" id="nombre" name="nombre" placeholder="Nombre producto">
-        </div>
-        <div class="form-group">
-            <input type="text" class="form-control text" id="descripcion" name="descripcion" placeholder="Descripción">
-        </div>
-        <div class="form-group">
-            <input type="number" class="form-control text " id="preciov" name="preciov" placeholder="Precio de venta">
-        </div>
-        <div class="form-group">
-            <input type="number" class="form-control text" id="precioc" name="precioc" placeholder="Precio de compra">
-        </div>
-        <div class="form-group">
-            <input type="number" class="form-control text " id="stock" name="stock" placeholder="Cantidad en stock">
-        </div>
-        <div class="form-group">
-            <input type="text" class="form-control text" id="url" name="url" placeholder="URL de la imagen">
-        </div>
+        </form>
+    </div>
 
-        <center><button id="btnRegistrar" class="btn-reg text ">Registrar</button></center>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
-    </form>
-
+    <script src="assets/js/registra.js"></script>
 </body>
 
 </html>
