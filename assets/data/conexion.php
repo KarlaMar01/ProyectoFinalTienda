@@ -104,5 +104,16 @@ class Conexion{
         
             return $rows;
         }
+
+        function detalles($id) {
+            $con = $this->conectar();
+            $stmt = $con->prepare("SELECT * FROM producto WHERE id_prod = :id");
+            $stmt->bindParam(":id",$id);
+            if ($stmt->execute()) {
+                return $stmt;
+            }else {
+                return false;
+            }
+        }
 } 
 ?>

@@ -9,7 +9,7 @@
 
     $temp = $res;
 
-    /*
+    /*echo $row[1];
     print("Id Produto:" . $temp[3]['id_prod'] . '<br>');
     print("Nombre:" . $temp[3]['nombre_producto'] . '<br>');
     print("Precio Venta:" . $temp[3]['precio_venta'] . '<br>');
@@ -44,10 +44,11 @@
                     <nav class="links">
                       <!--  <a href="productos.html">Papelería</a> 
                         <a href="Regalos.html">Regalos</a> -->
+                        <a href="pagina.html">Inicio</a>
                         <a href="contacto.html">Contáctanos</a>
                         <a href="nosotros.html">Nosotros</a>
-                        <a href="assets/data/registro-ingreso.php">Registro</a>
-                        <a href="administra.php">Admin</a>
+                        <a href="registro_pro.html">Registro Productos</a>
+                       
                     </nav>
                 </div>
             </div>
@@ -72,7 +73,7 @@
                         <p class="precio"><?php echo '$'. $temp[11]['precio_venta'];  ?></p>
 
 
-                        <a href="ver_prop1.html" class="boton boton-amarillo d-block">Ver producto</a>
+                        <a href="view.php?id=<?php echo $temp[11]['id_prod']?>" class="boton boton-amarillo d-block">Ver producto</a>
                     </div>
                 </div>
                  <div class="anuncio">
@@ -86,7 +87,7 @@
 
 
 
-                        <a href="ver_prop1.html" class="boton boton-amarillo d-block">Ver producto</a>
+                    <a href="view.php?id=<?php echo $temp[18]['id_prod']?>" class="boton boton-amarillo d-block">Ver producto</a>
                     </div>
                 </div>
 
@@ -100,7 +101,7 @@
                     <p class="precio"><?php echo '$'. $temp[17]['precio_venta'];  ?></p>
 
 
-                        <a href="ver_prop2.html" class="boton boton-amarillo d-block">Ver producto</a>
+                    <a href="view.php?id=<?php echo $temp[17]['id_prod']?>" class="boton boton-amarillo d-block">Ver producto</a>
                     </div>
 
                 </div>
@@ -115,8 +116,7 @@
                     <p class="precio"><?php echo '$'. $temp[19]['precio_venta'];  ?></p>
 
 
-                        <a href="ver_prop3.html" class="boton boton-amarillo d-block">Ver producto</a>
-
+                    <a href="view.php?id=<?php echo $temp[19]['id_prod']?>" class="boton boton-amarillo d-block">Ver producto</a>
                     </div>
                 </div>
 
@@ -132,7 +132,7 @@
                     <p class="precio"><?php echo '$'. $temp[20]['precio_venta'];  ?></p>
 
 
-                        <a href="ver_prop1.html" class="boton boton-amarillo d-block">Ver producto</a>
+                    <a href="view.php?id=<?php echo $temp[20]['id_prod']?>" class="boton boton-amarillo d-block">Ver producto</a>
                     </div>
                 </div>
 
@@ -146,7 +146,7 @@
                     <p class="precio"><?php echo '$'. $temp[21]['precio_venta'];  ?></p>
 
 
-                        <a href="ver_prop2.html" class="boton boton-amarillo d-block">Ver producto</a>
+                    <a href="view.php?id=<?php echo $temp[21]['id_prod']?>" class="boton boton-amarillo d-block">Ver producto</a>
                     </div>
 
                 </div>
@@ -160,7 +160,7 @@
                     <p><?php echo $temp[22]['descripcion_producto'];  ?></p>
                     <p class="precio"><?php echo '$'. $temp[22]['precio_venta'];  ?></p>
 
-                        <a href="ver_prop3.html" class="boton boton-amarillo d-block">Ver producto</a>
+                    <a href="view.php?id=<?php echo $temp[22]['id_prod']?>" class="boton boton-amarillo d-block">Ver producto</a>
 
                     </div>
                 </div>
@@ -174,7 +174,7 @@
                     <p class="precio"><?php echo '$'. $temp[23]['precio_venta'];  ?></p>
 
 
-                        <a href="ver_prop1.html" class="boton boton-amarillo d-block">Ver producto</a>
+                    <a href="view.php?id=<?php echo $temp[23]['id_prod']?>" class="boton boton-amarillo d-block">Ver producto</a>
                     </div>
                 </div>
 
@@ -196,7 +196,7 @@
                     <p class="precio"><?php echo '$'. $temp[1]['precio_venta'];  ?></p>
 
 
-                        <a href="ver_prop1.html" class="boton boton-amarillo d-block">Ver producto</a>
+                    <a href="view.php?id=<?php echo $temp[1]['id_prod']?>" class="boton boton-amarillo d-block">Ver producto</a>
                     </div>
                 </div>
                 <div class="anuncio">
@@ -209,7 +209,7 @@
                     <p class="precio"><?php echo '$'. $temp[4]['precio_venta'];  ?></p>
 
 
-                        <a href="ver_prop1.html" class="boton boton-amarillo d-block">Ver producto</a>
+                    <a href="view.php?id=<?php echo $temp[4]['id_prod']?>" class="boton boton-amarillo d-block">Ver producto</a>
                     </div>
                 </div>
                 <div class="anuncio">
@@ -222,7 +222,7 @@
                     <p class="precio"><?php echo '$'. $temp[2]['precio_venta'];  ?></p>
 
 
-                        <a href="ver_prop2.html" class="boton boton-amarillo d-block">Ver producto</a>
+                    <a href="view.php?id=<?php echo $temp[2]['id_prod']?>" class="boton boton-amarillo d-block">Ver producto</a>
                     </div>
 
                 </div>
@@ -236,8 +236,7 @@
                     <p><?php echo $temp[3]['descripcion_producto'];  ?></p>
                     <p class="precio"><?php echo '$'. $temp[3]['precio_venta'];  ?></p>
 
-                        <a href="ver_prop3.html" class="boton boton-amarillo d-block">Ver producto</a>
-
+                    <a href="view.php?id=<?php echo $temp[3]['id_prod']?>" class="boton boton-amarillo d-block">Ver producto</a>
                     </div>
                 </div>
 
@@ -254,7 +253,7 @@
                     <p class="precio"><?php echo '$'. $temp[5]['precio_venta'];  ?></p>
 
 
-                        <a href="ver_prop1.html" class="boton boton-amarillo d-block">Ver producto</a>
+                    <a href="view.php?id=<?php echo $temp[5]['id_prod']?>" class="boton boton-amarillo d-block">Ver producto</a>
                     </div>
                 </div>
 
@@ -267,7 +266,7 @@
                     <p><?php echo $temp[6]['descripcion_producto'];  ?></p>
                     <p class="precio"><?php echo '$'. $temp[6]['precio_venta'];  ?></p>
 
-                        <a href="ver_prop2.html" class="boton boton-amarillo d-block">Ver producto</a>
+                    <a href="view.php?id=<?php echo $temp[6]['id_prod']?>" class="boton boton-amarillo d-block">Ver producto</a>
                     </div>
 
                 </div>
@@ -282,8 +281,7 @@
                     <p><?php echo $temp[7]['descripcion_producto'];  ?></p>
                     <p class="precio"><?php echo '$'. $temp[7]['precio_venta'];  ?></p>
 
-                        <a href="ver_prop3.html" class="boton boton-amarillo d-block">Ver producto</a>
-
+                    <a href="view.php?id=<?php echo $temp[7]['id_prod']?>" class="boton boton-amarillo d-block">Ver producto</a>
                     </div>
 
                 </div>
@@ -319,7 +317,7 @@
                     <p class="precio"><?php echo '$'. $temp[8]['precio_venta'];  ?></p>
 
 
-                        <a href="ver_prop1.html" class="boton boton-amarillo d-block">Ver producto</a>
+                    <a href="view.php?id=<?php echo $temp[8]['id_prod']?>" class="boton boton-amarillo d-block">Ver producto</a>
                     </div>
                 </div>
                 <div class="anuncio">
@@ -332,7 +330,7 @@
                     <p class="precio"><?php echo '$'. $temp[9]['precio_venta'];  ?></p>
 
 
-                        <a href="ver_prop1.html" class="boton boton-amarillo d-block">Ver producto</a>
+                    <a href="view.php?id=<?php echo $temp[9]['id_prod']?>" class="boton boton-amarillo d-block">Ver producto</a>
                     </div>
                 </div>
 
@@ -345,7 +343,7 @@
                     <p><?php echo $temp[10]['descripcion_producto'];  ?></p>
                     <p class="precio"><?php echo '$'. $temp[10]['precio_venta'];  ?></p>
 
-                        <a href="ver_prop2.html" class="boton boton-amarillo d-block">Ver producto</a>
+                    <a href="view.php?id=<?php echo $temp[10]['id_prod']?>" class="boton boton-amarillo d-block">Ver producto</a>
                     </div>
 
                 </div>
@@ -359,7 +357,7 @@
                     <p><?php echo $temp[12]['descripcion_producto'];  ?></p>
                     <p class="precio"><?php echo '$'. $temp[12]['precio_venta'];  ?></p>
 
-                        <a href="ver_prop3.html" class="boton boton-amarillo d-block">Ver producto</a>
+                    <a href="view.php?id=<?php echo $temp[12]['id_prod']?>" class="boton boton-amarillo d-block">Ver producto</a>
 
                     </div>
                 </div>
@@ -377,7 +375,7 @@
                     <p class="precio"><?php echo '$'. $temp[13]['precio_venta'];  ?></p>
 
 
-                        <a href="ver_prop1.html" class="boton boton-amarillo d-block">Ver producto</a>
+                    <a href="view.php?id=<?php echo $temp[13]['id_prod']?>" class="boton boton-amarillo d-block">Ver producto</a>
                     </div>
                 </div>
                 <div class="anuncio">
@@ -389,8 +387,7 @@
                     <p><?php echo $temp[14]['descripcion_producto'];  ?></p>
                     <p class="precio"><?php echo '$'. $temp[14]['precio_venta'];  ?></p>
 
-
-                        <a href="ver_prop1.html" class="boton boton-amarillo d-block">Ver producto</a>
+                    <a href="view.php?id=<?php echo $temp[14]['id_prod']?>" class="boton boton-amarillo d-block">Ver producto</a>
                     </div>
                 </div>
                 <div class="anuncio">
@@ -402,7 +399,7 @@
                     <p><?php echo $temp[15]['descripcion_producto'];  ?></p>
                     <p class="precio"><?php echo '$'. $temp[15]['precio_venta'];  ?></p>
 
-                        <a href="ver_prop2.html" class="boton boton-amarillo d-block">Ver producto</a>
+                    <a href="view.php?id=<?php echo $temp[15]['id_prod']?>" class="boton boton-amarillo d-block">Ver producto</a>
                     </div>
 
                 </div>
@@ -417,8 +414,7 @@
                     <p><?php echo $temp[16]['descripcion_producto'];  ?></p>
                     <p class="precio"><?php echo '$'. $temp[16]['precio_venta'];  ?></p>
 
-                        <a href="ver_prop3.html" class="boton boton-amarillo d-block">Ver producto</a>
-
+                    <a href="view.php?id=<?php echo $temp[16]['id_prod']?>" class="boton boton-amarillo d-block">Ver producto</a>
                     </div>
 
                 </div>
