@@ -10,6 +10,8 @@ if (!empty($_GET["id"])) {
     }
 }
 
+include ('assets/data/Configuracion.php');
+
 ?>
 
 <!DOCTYPE html>
@@ -20,7 +22,9 @@ if (!empty($_GET["id"])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/styleV.css">
     <link rel="stylesheet" href="assets/css/compras.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <title>Compras</title>
+  
 </head>
 <body>
     <div class="media">
@@ -37,7 +41,8 @@ if (!empty($_GET["id"])) {
                     <a href="productos.html">Regalos</a>
                     <a href="contacto.html">Contáctanos</a>
                     <a href="nosotros.html">Nosotros</a>
-                    <a href="registro_pro.html">Registro Productos</a>
+                    <a href="VerCarta.php">Ver Carta</a>
+                    <a href="Pagos.php">Pagos</a>
                    <!-- 
                     <a href="registro-ingreso.php">Registro</a>
                     <a href="administra.php">Admin</a> -->
@@ -55,6 +60,7 @@ if (!empty($_GET["id"])) {
            </div>
         </div>
         
+
         <div class="mitades">
     <div class="Formulario">
     <form action="">
@@ -79,7 +85,7 @@ if (!empty($_GET["id"])) {
                   <input list="ventac" name="ventac" type="text" placeholder="--Selecciona--" />
               </div>
               
-              <input class="boton boton-verde" type="submit" name="submit" value="Comprar" />
+               <a class="btn btn-success" href="assets/data/AccionCarta.php?action=addToCart&id=<?php echo $row[0]; ?>">Comprar</a>
 
               <p class="precio">Devolución Gratis</p><p>Tienes 30 días para devolverlo por algún defrecto. Solo aplica en cosas que no sean alimentos</p>
               <p class="precio">Compra Protegida</p><p>Recibe el producto que esperabas o te devolvemos tu dinero.</p>

@@ -1,0 +1,17 @@
+body {
+    background-image: url('../../assets/img/fondocar.jpg');
+    background-repeat: no-repeat;
+}
+
+.color {
+    opacity: .9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Noto Sans JP', sans-serif;
+    margin-top: 10rem;
+}
+
+.btnc {
+    background-color: rgb(192, 19, 19);
+}

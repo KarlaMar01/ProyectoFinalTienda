@@ -16,8 +16,8 @@
     print("<img src=" . $temp[3]['url_img'] . ' width="150">');
    */
 
-?>
 
+?>
 <!DOCTYPE html>
 <html lang="en">
 
