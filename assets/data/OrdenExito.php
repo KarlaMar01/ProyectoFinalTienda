@@ -6,8 +6,8 @@ if(!isset($_REQUEST['id'])){
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="stylesheet" href="../../assets/css/car.css">
-<link rel="shortcut icon" href="../../assets/img/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="../css/car.css">
+<link rel="shortcut icon" href="../img/favicon.ico" />
  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <title>Orden Completado - PHP Carrito de Compras</title>
     <meta charset="utf-8">
@@ -32,7 +32,7 @@ if(!isset($_REQUEST['id'])){
     <h1>Estado de su Orden</h1>
     <p>Su pedido ha sido enviado exitosamente. La ID del pedido es #<?php echo $_GET['id']; ?></p>
            </div>
- <div class="panel-footer">BaulPHP</div>
+ <div class="panel-footer">𝓟𝓻𝓲𝓭𝓮</div>
  </div><!--Panek cierra-->
 </div>
 </body>

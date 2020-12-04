@@ -5,9 +5,9 @@ class Conexion{
     function conectar(){
         $conn = null;
      try{
-        $conn = new PDO('mysql:host=localhost;dbname=papeleria', 
-                            'root',
-                             '');
+        $conn = new PDO('mysql:host=localhost;dbname=id15523937_papeleria', 
+                            'id15523937_veraydens',
+                             'pape1Pimpollo*');
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         
         //echo 'Se estableció la conexión <br> <br>';

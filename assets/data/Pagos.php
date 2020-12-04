@@ -23,11 +23,11 @@ $custRow = $query->fetch_assoc();
 <head>
     <title>Detalle del pedido</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="../../assets/css/car.css">
-    <link rel="shortcut icon" href="../../assets/img/favicon.ico" />
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/car.css">
+    <link rel="shortcut icon" href="../img/favicon.ico" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
     .container{padding: 20px;}
     .table{width: 65%;float: left;}
@@ -93,7 +93,7 @@ $custRow = $query->fetch_assoc();
     </div>
     <div class="footBtn">
         <a href="../../productos.php" class="btn btn-warning"><i class="glyphicon glyphicon-menu-left"></i> Continue Comprando</a>
-        <a href="AccionCarta.php?action=placeOrder" class="btn btn-success orderBtn">Realizar pedido <i class="glyphicon glyphicon-menu-right"></i></a>
+        <a href="assets/data/AccionCarta.php?action=placeOrder" class="btn btn-success orderBtn">Realizar pedido <i class="glyphicon glyphicon-menu-right"></i></a>
     </div>
         </div>
  <div class="panel-footer">𝓟𝓻𝓲𝓭𝓮</div>

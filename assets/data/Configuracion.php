@@ -1,9 +1,9 @@
 <?php
 //DB details
 $dbHost = 'localhost';
-$dbUsername = 'root';
-$dbPassword = '';
-$dbName = 'papeleria';
+$dbUsername = 'id15523937_veraydens';
+$dbPassword = 'pape1Pimpollo*';
+$dbName = 'id15523937_papeleria';
 
 //Create connection and select DB
 $db = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);

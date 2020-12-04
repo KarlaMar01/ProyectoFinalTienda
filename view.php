@@ -38,7 +38,7 @@ include ('assets/data/Configuracion.php');
                 <div class="logot ">𝓟𝓻𝓲𝓭𝓮</div>
                 <nav class="links ">
                     <a href="pagina.html">Inicio</a>
-                    <a href="productos.html">Regalos</a>
+                    <a href="productos.php">Regalos</a>
                     <a href="contacto.html">Contáctanos</a>
                     <a href="nosotros.html">Nosotros</a>
                     <a href="VerCarta.php">Ver Carta</a>

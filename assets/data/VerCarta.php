@@ -8,11 +8,11 @@ $cart = new Cart;
 <head>
     <title>Carrito</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="../../assets/css/car.css">
-    <link rel="shortcut icon" href="../../assets/img/favicon.ico" />
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/car.css">
+    <link rel="shortcut icon" href="../img/favicon.ico" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     
     <style>
     .container{padding: 20px;}
@@ -79,7 +79,7 @@ $cart = new Cart;
     </tbody>
     <tfoot>
         <tr>
-            <td><a href="productos.php" class="btn btn-warning"><i class="glyphicon glyphicon-menu-left"></i> Continue Comprando</a></td>
+            <td><a href="../../productos.php" class="btn btn-warning"><i class="glyphicon glyphicon-menu-left"></i> Continue Comprando</a></td>
             <td colspan="2"></td>
             <?php if($cart->total_items() > 0){ ?>
             <td class="text-center"><strong>Total <?php echo '$'.$cart->total().' USD'; ?></strong></td>
